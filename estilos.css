@@ -5,6 +5,9 @@
 body{
   font-family: sans-serif;
 }
+.main img{
+  max-width: 80%;
+}
 .logo{
   width: 135px;
   height: 50px;
@@ -45,6 +48,7 @@ body{
   left: -100%;
   width: 100%;
   z-index: 100;
+  transition: all 0.5s;
 }
 .menu{
   list-style: none;
@@ -67,4 +71,84 @@ body{
 }
 .muestrate{
   left: 0;
+}
+/*----------------Estilos del banner--------------*/
+.banner img{
+  width: 100%;
+}
+.banner{
+  position: relative;
+}
+.banner .contenedor{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  text-align: center;
+  width: 100%;
+  color: white;
+
+}
+/*----------------Estilos del Info--------------*/
+.info{
+  background: #333;
+  color: white;
+  text-align: center;
+  margin-top: -50px;
+}
+.info__img{
+  border-radius: 50%;
+  border: 7px solid #444;
+  position: relative;
+}
+.info__txt{
+  text-align: justify;
+  padding: 15px;
+}
+
+/*----------------Estilos del Platos--------------*/
+.platos{
+  background: #9a6339;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+.platos h3{
+  font-size: 30px;
+}
+.platos .platos__titulo{
+  font-size: 40px;
+}
+.platos .platos__txt{
+  text-align: justify;
+  padding: 15px;
+}
+.platos__img{
+  border-radius: 50%;
+  border: 7px solid white;
+}
+/*----------------Estilos del Mapa--------------*/
+.mapa{
+  background: #f0ede5;
+  padding: 15px;
+  text-align: center;
+}
+.mapa h3{
+  font-size: 30px;
+}
+.mapa p{
+  text-align: justify;
+}
+/*----------------Estilos del Footer--------------*/
+.footer{
+  background: black;
+  color: white;
+  padding: 0;
+  text-align: center;
+}
+.footer img{
+  width: 70px;
+  margin-right: 10px;
+  border: 5px solid white;
+  border-radius: 50%;
 }
