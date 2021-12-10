@@ -1,48 +1,55 @@
-*{
+* {
   margin: 0;
   box-sizing: border-box;
 }
-body{
+
+body {
   font-family: sans-serif;
 }
-.main img{
+
+.main img {
   max-width: 80%;
 }
-.logo{
-  width: 135px;
-  height: 50px;
+
+.logo {
+  width: 240px;
+  height: 90px;
 }
-.contenedor{
+
+.contenedor {
   width: 100%;
   margin: auto;
 }
 
-
 /*----------------Estilos del header--------------*/
-.header{
-  height: 60px;
+.header {
+  height: 90px;
   background: #333;
 }
-.header .contenedor{
+
+.header .contenedor {
   display: flex;
   justify-content: space-between;
 }
-.logo,.icon-menu{
-  margin: 5px;
+
+.logo, .icon-menu {
+  margin: 0px;
   color: #fff;
 }
-.icon-menu{
+
+.icon-menu {
   display: block;
-  width: 40px;
-  height: 40px;
-  font-size: 30px;
+  width: 85px;
+  height: 85px;
+  font-size: 60px;
   background: #999;
   text-align: center;
-  line-height: 45px;
-  border-radius: 5px;
+  line-height: 95px;
+  border-radius: 13px;
   cursor: pointer;
 }
-.nav{
+
+.nav {
   position: absolute;
   top: 60px;
   left: -100%;
@@ -50,36 +57,43 @@ body{
   z-index: 100;
   transition: all 0.5s;
 }
-.menu{
+
+.menu {
   list-style: none;
   padding: 0;
   margin: 0;
   height: 60px;
 }
-.menu__link{
+
+.menu__link {
   display: block;
   padding: 15px;
   background: rgba(51, 51, 51, 0.9);
   color: #fff;
   height: 60px;
   border-bottom: 1px solid #fff;
-
+  font-size: 25px;
 }
-.menu__link:hover{
+
+.menu__link:hover {
   background: white;
   color: black;
 }
-.muestrate{
+
+.muestrate {
   left: 0;
 }
+
 /*----------------Estilos del banner--------------*/
-.banner img{
+.banner img {
   width: 100%;
 }
-.banner{
+
+.banner {
   position: relative;
 }
-.banner .contenedor{
+
+.banner .contenedor {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -87,68 +101,201 @@ body{
   text-align: center;
   width: 100%;
   color: white;
-
 }
+
 /*----------------Estilos del Info--------------*/
-.info{
+.info {
   background: #333;
   color: white;
   text-align: center;
   margin-top: -50px;
 }
-.info__img{
+
+.info__img {
   border-radius: 50%;
   border: 7px solid #444;
   position: relative;
 }
-.info__txt{
+
+.info__txt {
   text-align: justify;
   padding: 15px;
 }
 
-/*----------------Estilos del Platos--------------*/
-.platos{
+/*----------------Estilos de Platos--------------*/
+.platos {
   background: #9a6339;
   color: white;
   text-align: center;
   padding: 15px;
 }
-.platos h3{
+
+.platos h3 {
   font-size: 30px;
 }
-.platos .platos__titulo{
+
+.platos p {
+  color: #9a6339;
+}
+
+.platos .platos__titulo {
   font-size: 40px;
 }
-.platos .platos__txt{
+
+.platos .platos__txt {
   text-align: justify;
   padding: 15px;
 }
-.platos__img{
+
+.platos__img {
   border-radius: 50%;
   border: 7px solid white;
 }
+
 /*----------------Estilos del Mapa--------------*/
-.mapa{
+.mapa {
   background: #f0ede5;
   padding: 15px;
   text-align: center;
 }
-.mapa h3{
+
+.mapa h3 {
   font-size: 30px;
 }
-.mapa p{
+
+.mapa p {
   text-align: justify;
 }
+
 /*----------------Estilos del Footer--------------*/
-.footer{
-  background: black;
+.footer {
+  background: #333;
   color: white;
   padding: 0;
   text-align: center;
 }
-.footer img{
+
+.footer img {
   width: 70px;
-  margin-right: 10px;
-  border: 5px solid white;
+  margin-right: 50px;
   border-radius: 50%;
+}
+
+/*----------------Estilos del Responsive--------------*/
+@media(min-width:480px) {
+  .contenedor .banner__titulo {
+    font-size: 44px;
+  }
+
+  .contenedor .banner__txt {
+    font-size: 25px;
+  }
+
+  .main img {
+    max-width: 90%;
+  }
+
+  .info__columna {
+    width: 32%;
+  }
+
+  .info .contenedor {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .platos .contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .platos__columna {
+    width: 40%;
+  }
+
+  .platos h3 {
+    font-size: 32px;
+  }
+}
+
+@media(min-width:768px) {
+  .platos__columna {
+    width: 24%;
+  }
+}
+
+@media(min-width:1024px) {
+  .nav {
+    position: static;
+    width: auto;
+  }
+
+  .menu {
+    display: flex;
+  }
+
+  .icon-menu {
+    display: none;
+  }
+
+  .menu__link {
+    border: none;
+  }
+
+  .contenedor .banner__titulo {
+    font-size: 50px;
+  }
+
+  .contenedor .banner__txt {
+    font-size: 36px;
+  }
+}
+
+@media(min-width:1280px) {
+  .contenedor .banner__titulo {
+    font-size: 90px;
+  }
+
+  .contenedor .banner__txt {
+    font-size: 46px;
+  }
+}
+
+/*----------------Estilos de Galeria--------------*/
+body {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 100%;
+}
+
+.row {
+  background: #333;
+  display: flex;
+  padding: 5px;
+  flex-wrap: wrap;
+}
+
+.column {
+  flex: 25%;
+  padding: 0px;
+}
+
+.column img {
+  margin-top: 30px;
+}
+
+@media(max-width:800px) {
+  .column {
+    flex: 50%;
+  }
+}
+
+@media(max-width:600px) {
+  .column {
+    flex: 100%;
+  }
 }
